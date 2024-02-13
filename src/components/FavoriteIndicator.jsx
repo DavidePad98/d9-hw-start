@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const FavoriteIndicator = () => {
   const navigate = useNavigate();
   const buttonLabel = useSelector((state) => {
-    return state.list.favorite.length;
+    return state.favorite.favorite.length;
   });
   return (
     <div className="d-flex justify-content-end my-4">
